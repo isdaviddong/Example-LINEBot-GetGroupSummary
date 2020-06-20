@@ -39,7 +39,7 @@ namespace isRock.Template
                     //在聊天室裡
                     if (!string.IsNullOrEmpty(LineEvent.source.roomId))
                     {
-                        //when join to group
+                        //when join to room
                         var Count = this.GetMembersInRoomCount(LineEvent.source.roomId);
                         responseMsg = "GetMembersInRoomCount : " + Count;
                     }
